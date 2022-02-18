@@ -1,0 +1,14 @@
+<service>
+  
+  <!-- ID of the service. It should be unique across the Windows system-->
+  <id>Jenkins Slave Windows</id>
+  <!-- Display name of the service -->
+  <name>Jenkins Windows Slave Agent</name>
+  <!-- Service description -->
+  <description>Serviço do Agente do nó Slave Windows no domínio</description>
+  
+  <!-- Path to the executable, which should be started -->
+  <executable>java</executable>
+  <arguments>-jar E:\Jenkins\Slave_SQL\agent.jar -jnlpUrl https://xxxxx/jenkins/computer/windows_com/jenkins-agent.jnlp -secret xxxxxxxxxxxxxxxxxxx -workDir "E:\Jenkins\Slave_SQL" -noCertificateCheck</arguments>
+
+</service>
